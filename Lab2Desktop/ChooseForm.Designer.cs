@@ -35,6 +35,7 @@ partial class ChooseForm
         bicycleButton.TabIndex = 1;
         bicycleButton.Text = "Bicycle";
         bicycleButton.UseVisualStyleBackColor = true;
+        bicycleButton.Click += bicycleButton_Click;
         mushroomButton.Location = new Point(222, 96);
         mushroomButton.Name = "mushroomButton";
         mushroomButton.Size = new Size(120, 48);
