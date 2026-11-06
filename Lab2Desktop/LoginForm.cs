@@ -25,6 +25,8 @@ public partial class LoginForm : Form
             return;
         }
 
-        MessageBox.Show("Login successful.", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        ChooseForm chooseForm = new ChooseForm(this);
+        chooseForm.Show();
+        Hide();
     }
 }
