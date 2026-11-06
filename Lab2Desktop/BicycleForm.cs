@@ -91,6 +91,16 @@ public partial class BicycleForm : Form
         return 1000;
     }
 
+    protected override void OnFormClosed(FormClosedEventArgs e)
+    {
+        base.OnFormClosed(e);
+
+        if (!Program.HasVisibleForm())
+        {
+            Application.Exit();
+        }
+    }
+
     private void backButton_Click(object sender, EventArgs e)
     {
         chooseForm.Show();

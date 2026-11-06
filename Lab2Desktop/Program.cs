@@ -8,4 +8,17 @@ static class Program
         ApplicationConfiguration.Initialize();
         Application.Run(new LoginForm());
     }
+
+    internal static bool HasVisibleForm()
+    {
+        foreach (Form form in Application.OpenForms)
+        {
+            if (form.Visible)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

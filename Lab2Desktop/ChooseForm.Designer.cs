@@ -42,6 +42,7 @@ partial class ChooseForm
         mushroomButton.TabIndex = 2;
         mushroomButton.Text = "Mushroom";
         mushroomButton.UseVisualStyleBackColor = true;
+        mushroomButton.Click += mushroomButton_Click;
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(420, 200);
